@@ -1,0 +1,3 @@
+[submodule "RadioPacket"]
+	path = RadioPacket
+	url = https://github.com/EPFLRocketTeam/RadioPacket.git

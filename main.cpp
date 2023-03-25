@@ -1,5 +1,7 @@
 #include <iostream>
  
+#include "RadioPacket/RadioPacket.h"
+
 struct S
 {
     // three-bit unsigned field, allowed values are 0...7
@@ -9,6 +11,10 @@ struct S
 int main()
 {
     S s = {6};
+
+    radio_packet p;
+    p.baro_alt = 100;
+    std::cout << p.baro_alt << '\n';
  
     ++s.b; // store the value 7 in the bit-field
     std::cout << s.b << '\n';
